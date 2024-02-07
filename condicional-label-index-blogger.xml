@@ -1,0 +1,4 @@
+
+<-- MUESTRA LA ETIQUETA NUMERO EN LA HOME DEL BLOG -->
+
+<h5><b:loop values='data:post.labels first (l =&gt; l.name contains &quot;$&quot;)' var='label'><data:label.name/></b:loop></h5>
