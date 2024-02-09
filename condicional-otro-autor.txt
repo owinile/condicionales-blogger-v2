@@ -1,0 +1,5 @@
+<b:if cond='data:post.author.name == &quot;Vicente Espinoza&quot;'>
+        
+         <b:else/>
+          
+        </b:if> 
