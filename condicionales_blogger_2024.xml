@@ -19,7 +19,7 @@
 </b:if> <!-- Cierre de la condicional -->
 <b:attr cond='not data:view.isPreview' name='target' value='_top'/> <!-- Condición que indica que no es una vista previa. -->
 <b:widget cond='data:view.isHomepage'> <!-- gadgets. -->
-<b:eval expr='data:post.longSnippet snippet {length: 480}'/> <!-- asigna la cantidad de caracteres deseados. -->
+<a expr:href='data:post.url' style='color:#fff'><b:eval expr='data:post.snippets.long snippet {length: 350}'/></a> <!-- asigna la cantidad de caracteres deseados. -->
 
 
 <!-- URL INFORMACIÓN: https://bloggercode-blogconnexion.blogspot.com/2018/02/attribute-cond.html -->
