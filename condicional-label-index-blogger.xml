@@ -2,3 +2,7 @@
 <-- MUESTRA LA ETIQUETA NUMERO EN LA HOME DEL BLOG -->
 
 <h5><b:loop values='data:post.labels first (l =&gt; l.name contains &quot;$&quot;)' var='label'><data:label.name/></b:loop></h5>
+
+<!-- Muestra variable label expresada en un bucle. -->
+
+<b:loop values='data:post.labels' var='label'><a expr:href='data:label.url'><data:label.name/></a></b:loop> 
